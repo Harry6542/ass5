@@ -20,3 +20,9 @@ class Treenode(object):
             Create an exact copy of the given tree with new treenodes and the same data values.
             Returns a reference to the new tree.
             """
+        if tnode is None:
+            return None
+        new_node = Treenode(tnode.get_data())
+        new_node.set_left(copy(tnode.get_left()))
+        new_node.set_right(copy(tnode.get_right()))
+        return new_node
