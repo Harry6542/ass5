@@ -17,4 +17,13 @@ ozc189@tux8:~/ozc189_green>
 ozc189@tux8:~/ozc189_green> touch platinum.txt
 ozc189@tux8:~/ozc189_green> VAR="orange"
 ozc189@tux8:~/ozc189_green> echo $VAR
+orange
+ozc189@tux8:~/ozc189_green>  echo $VAR>Gold.txt
+ozc189@tux8:~/ozc189_green> cat Gold.txt
+orange
+ozc189@tux8:~/ozc189_green> cat platinum.txt
+ozc189@tux8:~/ozc189_green> diff Gold.txt platinum.txt
+1d0
+< orange
+ozc189@tux8:~/ozc189_green> sleep 5
 
