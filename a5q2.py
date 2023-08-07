@@ -26,3 +26,35 @@ class Treenode(object):
         new_node.set_left(copy(tnode.get_left()))
         new_node.set_right(copy(tnode.get_right()))
         return new_node
+
+
+   def diff_sum_preorder(tnode):
+       """
+          Traverse the tree in preorder and alternate between finding the difference and summation of values.
+          Returns the value pattern X - Y + Z.
+          """
+
+       if tnode is None:
+           return 0
+       x = tnode.get_data()
+       y = tnode.diff_sum_preorder(tnode.get_left())
+       z = tnode.diff_sum_preorder(tnode.get_right())
+       return x - y + z
+
+
+   def diff_sum_inorder(tnode):
+       """
+    Traverse the tree in inorder and alternate between finding the difference and summation of values.
+    Returns the value pattern X - Y + Z.
+       """
+       if tnode is None:
+           return 0
+       x = tnode.diff_sum_inorder(tnode.get_left())
+       y = tnode.get_data()
+       z = tnode.diff_sum_inorder(tnode.get_right())
+       return x - y + z
+
+
+
+
+
