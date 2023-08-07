@@ -26,4 +26,11 @@ ozc189@tux8:~/ozc189_green> diff Gold.txt platinum.txt
 1d0
 < orange
 ozc189@tux8:~/ozc189_green> sleep 5
+ozc189@tux8:~/ozc189_green> sleep 5 &
+[1] 688245
+ozc189@tux8:~/ozc189_green> ps
+    PID TTY          TIME CMD
+ 601816 pts/85   00:00:00 bash
+ 688907 pts/85   00:00:00 ps
+[1]+  Done                    sleep 5
 
