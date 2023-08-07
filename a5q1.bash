@@ -11,4 +11,10 @@ ozc189@tux8:~> ls -a
  a5q1_log.txt   .cshrc*      .java/       Pictures/   Templates/
  .bashrc*       Desktop/     Links/       .profile@   .uc-72e3792250a3e57aa35f03e76d96b69f.ozc189.s360-peon12.tmp
  .cache/        Documents/   .local/      Public/     .uc-72e3792250a3e57aa35f03e76d96b69f.ozc189.s360-peon22.tmp
+ozc189@tux8:~> mkdir ozc189_green
+ozc189@tux8:~> cd ozc189_green
+ozc189@tux8:~/ozc189_green>
+ozc189@tux8:~/ozc189_green> touch platinum.txt
+ozc189@tux8:~/ozc189_green> VAR="orange"
+ozc189@tux8:~/ozc189_green> echo $VAR
 
