@@ -14,3 +14,9 @@ class Treenode(object):
             self.set_data(r)
         self.subst(self.get_left(), t, r)
         self.subst(self.get_right(), t, r)
+
+    def copy(tnode):
+            """
+            Create an exact copy of the given tree with new treenodes and the same data values.
+            Returns a reference to the new tree.
+            """
